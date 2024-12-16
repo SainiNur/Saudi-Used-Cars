@@ -21,7 +21,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 
 # Load model
 try:
-    with open('Saudi-Used-Cars-XGB-ML-Regression-Model.pkl', 'rb') as file:
+    with open(r'notebook/Saudi-Used-Cars-XGB-ML-Regression-Model.pkl', 'rb') as file:
         model = pickle.load(file)
     print("Model loaded successfully.")
 except FileNotFoundError:
